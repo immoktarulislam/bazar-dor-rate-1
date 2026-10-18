@@ -23,7 +23,7 @@ const CategoryPageContent = async ({ params }: { params: Promise<{ slug: string 
     const categoryProducts = await getProductByCategory(slug)
     const individualCategory: Icategories = await getIndividualCategory(slug)
 
-   
+
 
     return (
         <main className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
@@ -40,12 +40,12 @@ const CategoryPageContent = async ({ params }: { params: Promise<{ slug: string 
                     </p>
                 </div>
             </section>
-               
+
             <div >
                 <SortingDropdown categoryProducts={categoryProducts}></SortingDropdown>
             </div>
 
-            
+
         </main>
     );
 };
