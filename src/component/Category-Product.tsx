@@ -31,19 +31,19 @@ const CategoryProduct = ({ categoryProduct }: { categoryProduct: IcategoryProduc
                     </div>
                 </div>
 
-                {/* <div className="mt-5 flex items-end justify-between gap-3 border-t border-gray-100 pt-4">
-                <div>
-                    <p className="text-sm text-gray-500">আজকের দাম</p>
-                    <p className="mt-1 text-2xl font-bold text-gray-900">
-                        {categoryProduct.today.toLocaleString('bn-BD')}
-                        <span className="ml-1 text-sm font-medium text-gray-500">টাকা</span>
-                    </p>
+                <div className="mt-5 flex items-end justify-between gap-3 border-t border-gray-100 pt-4">
+                    <div>
+                        <p className="text-sm text-gray-500">আজকের দাম</p>
+                        <p className="mt-1 text-2xl font-bold text-gray-900">
+                            {categoryProduct.today.toLocaleString('bn-BD')}
+                            <span className="ml-1 text-sm font-medium text-gray-500">টাকা</span>
+                        </p>
+                    </div>
+                    <span className={`inline-flex shrink-0 items-center gap-1 rounded-full px-2.5 py-1 text-sm font-semibold ${changeStyle}`}>
+                        <span aria-hidden="true">{changeIcon}</span>
+                        {categoryProduct.change?.pct.toLocaleString('bn-BD')}%
+                    </span>
                 </div>
-                <span className={`inline-flex shrink-0 items-center gap-1 rounded-full px-2.5 py-1 text-sm font-semibold ${changeStyle}`}>
-                    <span aria-hidden="true">{changeIcon}</span>
-                    {categoryProduct.change?.pct.toLocaleString('bn-BD')}%
-                </span>
-            </div> */}
             </article>
         </Link>
     );
