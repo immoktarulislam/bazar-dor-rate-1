@@ -1,4 +1,3 @@
-
 import CategoryProduct from "@/component/Category-Product";
 import { Icategories, IcategoryProducts } from "@/type";
 import { connection } from "next/server";
