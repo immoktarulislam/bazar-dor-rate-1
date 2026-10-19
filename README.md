@@ -73,7 +73,7 @@ Follow these steps to create and run the Bazar Dor project locally.
 Make sure Node.js is installed on your computer. Open your terminal and run:
 
 ```bash
-npx create-next-app@latest bazar-dor
+npx create-next-app@latest bazar-dor-rate-1
 ```
 
 During setup, configure the options according to your project requirements, including JavaScript, App Router, and Tailwind CSS.
@@ -81,7 +81,7 @@ During setup, configure the options according to your project requirements, incl
 ### 2. Navigate to the Project Directory
 
 ```bash
-cd bazar-dor
+cd bazar-dor-rate-1
 ```
 
 ### 3. Install Dependencies
@@ -182,4 +182,4 @@ npm run start
 
 ---
 
-**Bazar Dor — A modern shopping experience built with Next.js.**
+**BazarDor — A modern shopping experience built with Next.js.**
