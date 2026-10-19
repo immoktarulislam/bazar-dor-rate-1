@@ -66,29 +66,38 @@ bazar-dor/
 
 ## ⚙️ Getting Started
 
-Follow these steps to run the project locally.
+Follow these steps to create and run the Bazar Dor project locally.
 
-### 1. Clone the Repository
+### 1. Create a Next.js Project
+
+Make sure Node.js is installed on your computer. Open your terminal and run:
 
 ```bash
-git clone https://github.com/immoktarulislam/bazar-dor-rate-1
+npx create-next-app@latest bazar-dor
 ```
 
-Navigate to the project folder:
+During setup, configure the options according to your project requirements, including JavaScript, App Router, and Tailwind CSS.
+
+### 2. Navigate to the Project Directory
 
 ```bash
 cd bazar-dor
 ```
 
-### 2. Install Dependencies
+### 3. Install Dependencies
+
+Install the required packages:
 
 ```bash
-npm install
+npm install better-auth @better-auth/mongo-adapter mongodb
+npm install daisyui react-toastify
 ```
 
-### 3. Configure Environment Variables
+Install any additional UI libraries required by your implementation.
 
-Create a `.env.local` file in the project root and configure the required environment variables.
+### 4. Configure Environment Variables
+
+Create a `.env.local` file in the root directory:
 
 ```env
 BETTER_AUTH_DB_URL=your_mongodb_connection_string
@@ -99,31 +108,23 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 ```
 
-Replace the placeholder values with your actual configuration.
+Replace the placeholder values with your actual credentials.
 
-**Important:** Never commit `.env.local` or expose your database credentials, authentication secret, or Google client secret in a public repository.
-
-### 4. Configure MongoDB Atlas
+### 5. Configure MongoDB Atlas
 
 1. Create a MongoDB Atlas cluster.
-2. Create a database user.
-3. Configure the appropriate network access rules.
-4. Copy your MongoDB connection string.
-5. Add the connection string to `BETTER_AUTH_DB_URL`.
-6. Ensure your application connects to the intended database.
+2. Create a database user and configure network access.
+3. Copy your MongoDB connection string.
+4. Add the connection string to `BETTER_AUTH_DB_URL`.
+5. Verify that your application can connect to the database.
 
-### 5. Configure Google Sign-In
+### 6. Configure Better Auth
 
-1. Open the Google Cloud Console.
-2. Create or select a project.
-3. Configure the OAuth consent screen.
-4. Create OAuth 2.0 credentials.
-5. Add your application's authorized redirect URI according to your Better Auth configuration.
-6. Add the client ID and client secret to your environment variables.
+Set up the Better Auth server configuration, MongoDB adapter, authentication API route, and client configuration.
 
-Make sure the Google OAuth configuration matches the authentication callback URL used by your application.
+Enable email/password authentication and configure Google Sign-In if required.
 
-### 6. Run the Development Server
+### 7. Start the Development Server
 
 ```bash
 npm run dev
@@ -131,47 +132,19 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 7. Build for Production
+### 8. Build the Project
 
-Check whether the application builds successfully:
+To create an optimized production build, run:
 
 ```bash
 npm run build
 ```
 
-Start the production server locally:
+To start the production server:
 
 ```bash
 npm run start
 ```
-
-## 🔒 Authentication
-
-Bazar Dor uses Better Auth to manage user authentication.
-
-Authentication features include:
-
-- Email and password sign-up.
-- Email and password sign-in.
-- Google social sign-in.
-- Session management.
-- Authentication API routes.
-
-Authentication requires valid environment variables and a working database connection. Google Sign-In also requires valid Google OAuth credentials.
-
-## 🌍 Deployment
-
-The application can be deployed on [Vercel](https://vercel.com/).
-
-1. Push your project to GitHub.
-2. Import the repository into Vercel.
-3. Configure the required environment variables in Vercel Project Settings.
-4. Ensure MongoDB Atlas allows connections from the deployment environment.
-5. Configure the production `BETTER_AUTH_URL`.
-6. Update Google OAuth authorized redirect URIs for production.
-7. Deploy and verify the authentication and product pages.
-
-Run `npm run build` locally before deployment to identify build-time errors.
 
 ## 🔧 Troubleshooting
 
