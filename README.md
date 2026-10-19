@@ -20,7 +20,7 @@
 |---|---|
 | Next.js | React framework for the application |
 | React | Building interactive user interfaces |
-| JavaScript | Application logic |
+| TypeScript | Application logic |
 | Better Auth | Authentication and session management |
 | MongoDB | Database |
 | MongoDB Atlas | Cloud database hosting |
@@ -71,7 +71,7 @@ Follow these steps to run the project locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/immoktarulislam/bazar-dor-rate-1
 ```
 
 Navigate to the project folder:
@@ -206,12 +206,6 @@ Run `npm run build` locally before deployment to identify build-time errors.
 **Moktarul Islam**
 
 - GitHub: https://github.com/immoktarulislam/bazar-dor-rate-1
-
-*Replace the profile links with your actual URLs.*
-
-## 📄 License
-
-This project is intended for learning and development. Add a suitable open-source license if you plan to distribute the project publicly.
 
 ---
 
