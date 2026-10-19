@@ -16,22 +16,22 @@ const CategoryProduct = ({ categoryProduct }: { categoryProduct: IcategoryProduc
 
     return (
         <Link href={`/productDetails/${categoryProduct.id}`}>
-        <article className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md sm:p-5">
-            <div className="flex items-center gap-3">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-green-50 text-3xl sm:h-16 sm:w-16 sm:text-4xl">
-                    {categoryProduct.image}
+            <article className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md sm:p-5">
+                <div className="flex items-center gap-3">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-green-50 text-3xl sm:h-16 sm:w-16 sm:text-4xl">
+                        {categoryProduct.image}
+                    </div>
+                    <div className="min-w-0">
+                        <h2 className="truncate text-lg font-bold text-gray-900 sm:text-xl">
+                            {categoryProduct.nameBn}
+                        </h2>
+                        <p className="mt-1 text-sm text-gray-500">
+                            প্রতি {categoryProduct.unit}
+                        </p>
+                    </div>
                 </div>
-                <div className="min-w-0">
-                    <h2 className="truncate text-lg font-bold text-gray-900 sm:text-xl">
-                        {categoryProduct.nameBn}
-                    </h2>
-                    <p className="mt-1 text-sm text-gray-500">
-                        প্রতি {categoryProduct.unit}
-                    </p>
-                </div>
-            </div>
 
-            <div className="mt-5 flex items-end justify-between gap-3 border-t border-gray-100 pt-4">
+                {/* <div className="mt-5 flex items-end justify-between gap-3 border-t border-gray-100 pt-4">
                 <div>
                     <p className="text-sm text-gray-500">আজকের দাম</p>
                     <p className="mt-1 text-2xl font-bold text-gray-900">
@@ -43,8 +43,8 @@ const CategoryProduct = ({ categoryProduct }: { categoryProduct: IcategoryProduc
                     <span aria-hidden="true">{changeIcon}</span>
                     {categoryProduct.change?.pct.toLocaleString('bn-BD')}%
                 </span>
-            </div>
-        </article>
+            </div> */}
+            </article>
         </Link>
     );
 };

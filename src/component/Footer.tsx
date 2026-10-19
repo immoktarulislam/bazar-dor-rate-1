@@ -19,13 +19,13 @@ const Footer = () => {
                     </p>
                 </div>
 
-                {/* <nav aria-label="ফুটার নেভিগেশন">
+                <nav aria-label="ফুটার নেভিগেশন">
                     <h2 className="mb-2 text-base font-bold text-gray-900">দ্রুত লিংক</h2>
                     <ul className="space-y-2 text-sm text-gray-600">
                         <li><Link href="/" className="transition-colors hover:text-[#008a45]">হোম</Link></li>
                         <li><Link href="/#all-products" className="transition-colors hover:text-[#008a45]">সব পণ্য</Link></li>
                     </ul>
-                </nav> */}
+                </nav>
 
                 <nav aria-label="অ্যাকাউন্ট লিংক">
                     <h2 className="mb-2 text-base font-bold text-gray-900">অ্যাকাউন্ট</h2>
