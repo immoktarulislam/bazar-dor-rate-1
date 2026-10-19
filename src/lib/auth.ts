@@ -36,8 +36,3 @@ export const auth = betterAuth({
     },
   },
 });
-
-console.log(
-  "BETTER_AUTH_URI loaded:",
-  Boolean(process.env.BETTER_AUTH_URI)
-);
